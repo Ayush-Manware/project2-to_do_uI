@@ -69,7 +69,7 @@ body{
 h5{
     color: var(--skyblue);
     padding: 20px 10px;
-    border-bottom: 1px solid var(--border);
+    border-bottom: 2px solid var(--border);
 }
 
 .cardContainer {
@@ -78,13 +78,13 @@ h5{
     align-items: center;
     justify-content: center;
     gap: 10px;
-    margin: 20px 0px; 
+    margin: 30px 0px; 
 }
 
 .cardContainer2 {
     display: inline-flex;
-    justify-content: flex-start;
-    gap: 15px;
+    justify-content: start;
+    gap: 10px;
 }
 
 .cards{
@@ -92,12 +92,13 @@ h5{
     width: 295px;
     height: 280px; 
     background: white;
-    border: 2px solid rgba(128, 128, 128, 0.264);
+    border: 2px solid rgba(149, 149, 149, 0.108);
 }
 
 .cards:hover{
-    box-shadow: 0px 1px 10px rgba(128, 128, 128, 0.661);
+    box-shadow: 0px 5px 10px rgba(128, 128, 128, 0.371);
     transition: ease 0.2s;
+    translate: 0px -10px;
 }
 
 .del{
@@ -111,3 +112,92 @@ h5{
     color: var(--black);
     padding: 25px 10px;
 }
+
+.visible{
+    opacity: 0.1;
+    background: grey;
+}
+
+/* page-2 */
+.popup1{
+    position: absolute;
+    top: 34%;
+    left: 34%;
+    background: white;
+    width: 400px;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+.addnewtask-heading{
+    float: left;
+    border-bottom: 2px solid var(--skyblue);
+    color: var(--black);
+}
+
+.addnewtask-heading:hover{
+    letter-spacing: 2px;
+    transition: 0.3s ease-out;
+}
+
+.cross{
+    float: right;
+    font-size: 32px;
+    line-height: 50px;
+    color: var(--black);
+    padding: 0px 5px;
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-direction: alternate;
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+        transition: ease 0.1s;
+    }
+    to{
+        transform: rotate(360deg);
+        transition: ease 20s;
+    }
+}
+
+.cross:hover{
+  color: red;
+}
+
+.addnewtask-heading{
+    font-size: 18px;
+    font-weight: 500;
+    padding: 15px 10px;
+}
+
+.c_input{
+    outline: none;
+    border: 1px solid var(--border);
+    background:white;
+    width: 100%;
+    margin: 20px 0px;
+    padding: 12px 20px;
+}
+
+.addTaskbtn{
+    float: right;
+    padding: 8px 30px;
+    background: var(--skyblue);
+    color: white;
+    border: 2px solid var(--skyblue);
+    border-radius: 5px;
+    margin: 10px 0px;
+}
+
+.addTaskbtn:hover{
+    background: var(--white);
+    border: 1px solid var(--skyblue);
+    color: var(--skyblue);
+    transition: ease 0.2s;
+    /* box-shadow: 0px 2px 10px rgba(128, 128, 128, 0.526); */
+    padding: 10px 32px;
+}
+
