@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Instrument+Serif&family=Montserrat&family=Poltawski+Nowy:wght@500;600&family=Poppins:ital,wght@0,400;0,700;1,400&family=Raleway:wght@300;400&family=Roboto+Mono:wght@300&family=Roboto+Slab:wght@100;200;500;600;700&family=Roboto:wght@300;400&family=Sono:wght@500&family=Tilt+Neon&family=Ysabeau:wght@300&display=swap');
+
+
+/* page-1 */
+*{
+    margin: 0px auto;
+    padding: 0px;
+    box-sizing: border-box; 
+    text-decoration: none;
+    /* border: 1px solid; */
+}
+
+:root{
+    --black: rgba(66, 66, 66, 1);
+    --skyblue: rgba(0, 165, 236, 1);
+    --white: rgba(255, 255, 255, 1);
+    --border: rgba(237, 237, 237, 1);
+    --grey: rgba(194, 194, 194, 1);
+    --background: rgba(247, 247, 247, 1);
+}
+
+body{
+    background: var(--background);
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif; 
+}
+
+.navbar{
+    padding: 15px 80px;
+    background: var(--white);
+    box-shadow: 1px 1px 20px rgba(128, 128, 128, 0.366);
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.logo{
+    font-size: 40px;
+    text-decoration: none;
+    color: var(--black);
+} 
+
+.list{
+    color: var(--skyblue);
+}
+
+.mainContainer{
+    padding: 25px 80px;
+    font-size: 20px;
+}
+
+.newtask{
+    text-align: right;
+    color: var(--black);
+    margin: 6px 0px;
+}
+
+.plusSign{
+    border-radius: 50%;
+    padding: 3px 9px;
+    color: var(--white);
+    background: var(--skyblue);
+}
+
+.addNewtask{
+    color: var(--black);
+    padding-left: 5px;
+}
+
+h5{
+    color: var(--skyblue);
+    padding: 20px 10px;
+    border-bottom: 1px solid var(--border);
+}
+
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0px; 
+}
+
+.cardContainer2 {
+    display: inline-flex;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.cards{
+    border-radius: 5px;
+    width: 295px;
+    height: 280px; 
+    background: white;
+    border: 2px solid rgba(128, 128, 128, 0.264);
+}
+
+.cards:hover{
+    box-shadow: 0px 1px 10px rgba(128, 128, 128, 0.661);
+    transition: ease 0.2s;
+}
+
+.del{
+    text-decoration: line-through;
+    color: var(--grey);
+}
+
+.checks{
+    font-size: 16px;
+    padding: 30px 0px;
+    color: var(--black);
+    padding: 25px 10px;
+}
