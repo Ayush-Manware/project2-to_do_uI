@@ -61,48 +61,45 @@ body {
     background: var(--skyblue);
 }
 
-.plusSign:hover{
-    padding: 11px 17px;
-    /* font-size: ; */
-    /* font-weight: bolder; */
-    transition: 0.2s;
-}
-
 .addNewtask {
     color: var(--black);
     padding-left: 5px;
 }
 
+.addNewtask:hover {
+    color: var(--skyblue);
+    transition: ease 0.2s;
+    text-decoration: underline  var(--skyblue);
+}
+
 h5 {
     color: var(--skyblue);
-    padding: 20px 10px;
+    padding: 10px 10px;
+    border-bottom: 2px solid var(--border);
+}
+
+h5 a{
+    color: var(--skyblue);
+    padding: 10px 10px;
     border-bottom: 2px solid var(--border);
 }
 
 .cardContainer {
+    width: 100%;
+    margin: 30px auto;
+    padding: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    /* align-items: center; */
-    justify-content: flex-start;
-    gap: 10px;
-    margin: 30px 0px;
-}
-
-.cardContainer2 {
-    display: inline-flex;
-    justify-content: flex-start;
-    gap: 10px;
 }
 
 .cards {
     border-radius: 5px;
-    width: 295px;
+    width: 280px;
     height: 280px;
     background: white;
-    border: 2px solid rgba(149, 149, 149, 0.108);
-    margin-left: auto;
-    order: 2;
+    border: 2px solid var(--border);
+    margin: 5px;
 }
 
 .cards:hover {
@@ -220,9 +217,7 @@ h5 {
 .page3container{
     width: 100%;
     height: 100%;
-    margin-top: 50px;
-    margin-inline: auto;
-    /* border: 2px solid; */
+    padding: 20px;
 }
 
 .page3Options{
@@ -230,10 +225,6 @@ h5 {
     margin-bottom: 30px; 
     padding: 20px 0px;
 }
-
-/* .back-Contaner{
-
-} */
 
 .back{
     color: var(--black);
