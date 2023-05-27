@@ -101,6 +101,9 @@
            .addNewtask{
             display: none;
            }
+           .cards{
+            flex-grow: 1;
+          }
 
            .plusSign{
             padding-inline: 60px;
@@ -135,7 +138,5 @@
 }
 
 @media screen and (max-width:1030px){
-  .cards{
-    flex-grow: 1;
-  }
+
 }

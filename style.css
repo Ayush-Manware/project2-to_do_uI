@@ -55,9 +55,17 @@ body {
 
 .plusSign {
     border-radius: 50%;
-    padding: 10px 16px;
+    padding: 8px 14px;
     color: var(--white);
     background: var(--skyblue);
+    transition: all 0.2s ease;
+    border: 2px solid var(--skyblue);
+}
+
+.plusSign:hover{
+    color: white;
+    /* border: 2px solid var(--background); */
+    box-shadow: 1px 1px 10px rgba(22, 22, 22, 0.347);
 }
 
 .addNewtask {
